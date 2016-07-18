@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.tomsu.springtests</groupId>
-    <artifactId>gs-rest-service</artifactId>
+    <artifactId>gs-restservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
