@@ -9,5 +9,3 @@ build with:
 start with:
 `mvn spring-boot:run`
 
-## continue
-https://spring.io/guides/gs/consuming-rest/
