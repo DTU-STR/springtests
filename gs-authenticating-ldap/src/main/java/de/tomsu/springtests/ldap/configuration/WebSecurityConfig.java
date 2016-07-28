@@ -26,7 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-
+    @Configuration
     protected static class AuthenticationConfiguration extends GlobalAuthenticationConfigurerAdapter {
         @Override
         public void init(AuthenticationManagerBuilder auth) throws Exception {
