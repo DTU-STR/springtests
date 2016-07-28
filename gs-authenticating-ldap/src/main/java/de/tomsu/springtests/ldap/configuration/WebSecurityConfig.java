@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected static class AuthenticationConfiguration extends GlobalAuthenticationConfigurerAdapter {
         @Override
         public void init(AuthenticationManagerBuilder auth) throws Exception {
-            auth.ldapAuthentication().userDnPatterns("uid={0}, ou=people")
+            auth.ldapAuthentication().userDnPatterns("uid={0},ou=people")
                     .groupSearchBase("ou=groups")
                     .contextSource().ldif("classpath:test-server.ldif");
         }

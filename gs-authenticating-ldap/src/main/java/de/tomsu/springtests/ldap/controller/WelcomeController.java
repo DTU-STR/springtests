@@ -1,5 +1,6 @@
 package de.tomsu.springtests.ldap.controller;
 
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,7 @@ public class WelcomeController {
 
     @RequestMapping("/")
     public String index() {
-        return "Welcome to my LDAP app.";
+        return "Welcome to my LDAP app. I guess your name is: "
+                + SecurityContextHolder.getContext().getAuthentication().getName();
     }
 }
