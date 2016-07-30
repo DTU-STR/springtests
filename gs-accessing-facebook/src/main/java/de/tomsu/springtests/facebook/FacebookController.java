@@ -1,5 +1,7 @@
 package de.tomsu.springtests.facebook;
 
+import javax.inject.Inject;
+
 import org.springframework.social.connect.ConnectionRepository;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.PagedList;
@@ -16,6 +18,7 @@ public class FacebookController {
 	private Facebook facebook;
 	private ConnectionRepository connectionRepository;
 	
+	@Inject
 	public FacebookController(Facebook facebook, ConnectionRepository connectionRepository) {
 		this.facebook = facebook;
 		this.connectionRepository = connectionRepository;
